@@ -1,0 +1,119 @@
+{
+  "expo": {
+    "name": "ToolBox",
+    "slug": "toolbox",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "toolbox",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0d0d0d"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Necessario para ferramentas HTML acessarem a camera",
+        "NSMicrophoneUsageDescription": "Necessario para ferramentas HTML gravarem audio",
+        "NSLocationWhenInUseUsageDescription": "Necessario para ferramentas HTML acessarem localizacao",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Necessario para ferramentas HTML acessarem localizacao em segundo plano",
+        "NSContactsUsageDescription": "Necessario para ferramentas HTML acessarem contatos",
+        "NSPhotoLibraryUsageDescription": "Necessario para importar e exportar arquivos HTML",
+        "NSPhotoLibraryAddUsageDescription": "Necessario para salvar arquivos exportados",
+        "NSFaceIDUsageDescription": "Autenticacao biometrica"
+      }
+    },
+    "android": {
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_BACKGROUND_LOCATION",
+        "android.permission.READ_CONTACTS",
+        "android.permission.WRITE_CONTACTS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO",
+        "android.permission.MANAGE_MEDIA",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.VIBRATE",
+        "android.permission.FLASHLIGHT",
+        "android.permission.NFC",
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.BLUETOOTH_SCAN",
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.ACCESS_WIFI_STATE",
+        "android.permission.CHANGE_WIFI_STATE",
+        "android.permission.BODY_SENSORS",
+        "android.permission.ACTIVITY_RECOGNITION",
+        "android.permission.READ_PHONE_STATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Necessario para ferramentas HTML acessarem a camera",
+          "microphonePermission": "Necessario para ferramentas HTML gravarem audio"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Necessario para ferramentas HTML acessarem localizacao",
+          "locationAlwaysPermission": "Necessario para localizacao em segundo plano",
+          "locationWhenInUsePermission": "Necessario para localizacao em uso ativo"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Necessario para importar/exportar arquivos",
+          "savePhotosPermission": "Necessario para salvar arquivos exportados",
+          "isAccessMediaLocationEnabled": true
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/icon.png",
+          "color": "#00ff88"
+        }
+      ],
+      [
+        "expo-contacts",
+        {
+          "contactsPermission": "Necessario para ferramentas HTML acessarem contatos"
+        }
+      ],
+      "expo-local-authentication"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
